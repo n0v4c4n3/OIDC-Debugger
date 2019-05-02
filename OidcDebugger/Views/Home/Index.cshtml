@@ -14,7 +14,7 @@
               <label for="authorizeUri">
                   Authorize URI <span class="required-text">(required)</span>
               </label>
-              <input type="text" id="authorizeUri" class="form-control" value="https://sso.bigcheese.uy/oxauth/restv1/authorize"
+              <input type="text" id="authorizeUri" class="form-control"
                   v-model="authorizeUri" v-on:focus="showInfo" v-on:input="saveParameters" required />
           </div>
 
@@ -22,7 +22,7 @@
               <label for="redirectUri">
                   Redirect URI <span class="required-text">(required)</span>
               </label>
-              <input type="text" id="redirectUri" class="form-control" value="https://test.sso.bigcheese.uy/debug"
+              <input type="text" id="redirectUri" class="form-control"
                   v-model="redirectUri" v-on:focus="showInfo" v-on:input="saveParameters" required />
           </div>
 
