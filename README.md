@@ -1,16 +1,14 @@
 # OAuth 2.0 and OpenID Connect Debugger
 
-:earth_americas: Live here: https://oauthdebugger.com or https://oidcdebugger.com
+:earth_americas: Live here: https://test.sso.bigcheese.uy
 
 ## What is this?
-
-Read the blog post: [Introducing the OpenID Connect Debugger](https://www.recaffeinate.co/post/introducing-openid-connect-debugger/)
 
 Getting an OAuth or OpenID Connect flow working properly can be tricky. There's a bunch of parameters you need to get right, and it's not always easy to capture or parse errors. I wrote this little web tool to make the process easier.
 
 ## How to use the debugger
 
-All you need to do is temporarily set your OAuth client redirect URI to `https://oidcdebugger.com/debug` (or `https://oauthdebugger.com/debug`):
+All you need to do is temporarily set your OAuth client redirect URI to `https://test.sso.bigcheese.uy/debug`:
 
 <img src="https://www.recaffeinate.co/img/post/introducing-openid-connect-debugger/temp-redirect-uri.png" alt="Temporarily change client redirect URI to debugger" title="Screenshot of Google developer console" width="550px">
 
@@ -29,8 +27,9 @@ Issues and PRs are welcome! The project is built with ASP.NET Core and Vue.js.
 To build and run locally,
 
 ```
-git clone https://github.com/nbarbettini/oidc-debugger
+git clone https://github.com/n0v4c4n3/oidc-debugger
 cd oidc-debugger
+snap install dotnet-sdk --classic
 dotnet build
 dotnet run
 ```

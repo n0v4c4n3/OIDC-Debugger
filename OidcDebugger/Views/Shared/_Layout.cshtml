@@ -6,13 +6,13 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@Tenant.Name debugger</title>
+    <title>@Tenant.Name - ANII</title>
     
     @Html.Partial("_Favicons")
 
-    <meta name="description" content="Test and debug @Tenant.Name requests. This free tool makes it easy to send requests and view responses." />
+    <meta name="description" content="Test and debug @Tenant.Name requests. This will help to make easy to send requests and view responses." />
     <meta property="og:type" content="website" />
-    <meta property="og:description" content="Test and debug @Tenant.Name requests. This free tool makes it easy to send requests and view responses." />
+    <meta property="og:description" content="Test and debug @Tenant.Name requests. This will help to make easy to send requests and view responses." />
     <meta property="og:title" content="@Tenant.Name debugger" />
     <meta property="og:image" content="@Url.AbsoluteContent("~/images/gear-sm.png")" />
     <meta property="og:url" content="@Url.AbsoluteContent("~")" />
@@ -30,15 +30,6 @@
     </environment>
     
     <environment names="Staging,Production">
-      <script async src="https://www.googletagmanager.com/gtag/js?id=@Tenant.GoogleTrackingId"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments)};
-        gtag('js', new Date());
-
-        gtag('config', '@Tenant.GoogleTrackingId');
-      </script>
-
     </environment>
     <script>
       window.tenant = '@Tenant.Shortname';
@@ -57,9 +48,9 @@
         </p>
         <span class="debug__author">
           <small>
-            <a href="https://www.recaffeinate.co">
+            <a href="https://bigcheese.com.uy">
               <i class="fa fa-code"></i>
-              Crafted by Nate Barbettini
+              Fork by Big Cheese 
             </a>
           </small>
         </span>
@@ -70,7 +61,7 @@
       @RenderBody()
 
       <footer class="debug__footer">
-        <span>&copy; 2018 <a href="https://www.recaffeinate.co">Nate Barbettini</a></span>
+        <span>&copy; 2019 <a href="https://bigcheese.com.uy">Big Cheese - ANII</a></span>
       </footer>
     </div>    
 
