@@ -258,3 +258,4 @@ paket-files/
 
 # Ignore dist assets
 OidcDebugger/wwwroot/bundle/
+.DS_Store
